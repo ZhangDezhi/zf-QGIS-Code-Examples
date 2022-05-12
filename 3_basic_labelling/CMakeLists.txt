@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 2.6)
+set (CMAKE_CXX_STANDARD 11)
 PROJECT(timtut3)
 SET(CMAKE_COLOR_MAKEFILE ON)
 # set path to additional CMake modules
@@ -98,7 +99,8 @@ TARGET_LINK_LIBRARIES(timtut3
   ${QT_LIBRARIES}
   ${QGIS_CORE_LIBRARY} 
   ${QGIS_GUI_LIBRARY}
-  ${GEOS_LIBRARY}
+  ${GEOS_LIBRARY}
+
   ${GDAL_LIBRARY}
 )
 
